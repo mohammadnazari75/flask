@@ -1,3 +1,3 @@
-FLASK_APP=authz/app.py
+FLASK_APP=authz
 FLASK_DEBUG=1
 FLASK_ENV=development
