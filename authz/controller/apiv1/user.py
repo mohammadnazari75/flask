@@ -3,14 +3,17 @@ from flask import abort,request
 from authz import db
 from authz.model import User
 from authz.schema.apiv1 import UserSchema
+from authz.decorator.apiv1 import auth_required
 
 class UserController:
     
+    @auth_required
     def get_users():
         users = User.query.all()
         users_schema = UserSchema(many=True)
         return users_schema.dump(users)
     
+    @auth_required
     def get_user(user_id):
         user = User.query.get(user_id)
         user_schema = UserSchema()
