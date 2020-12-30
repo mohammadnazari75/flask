@@ -15,14 +15,14 @@ Microservice/API
 ## Run Flask
 `flask run`
 
-# Create a User
+## Create a User
 `Curl -i -H ‘Content-Type: application/json’ localhost:5000/api/v1/users -d ‘{“username”:”admin”,”password”:”123”}’ `
 `Curl -i -H ‘Content-Type: application/json’ localhost:5000/api/v1/users -d ‘{“username”:”test”,”password”:”123”}’`
 
-# Get a Token
+## Get a Token
 `Curl -i -H ‘Content-Type: application/json’ localhost:5000/api/v1/auth/tokens -d ‘{“username”:”admin”,”password”:”123”}’ `
 
-# Get List of Users
+## Get List of Users
 `curl -i -H 'Content-Type: application/json' localhost:5000/api/v1/auth/tokens -H 'X-Auth-Token: {token}’ `
 
 
