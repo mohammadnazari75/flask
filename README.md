@@ -9,7 +9,9 @@ Microservice/API
 
 ## DB Migration and Getting Started
 `flask db init`
+
 `flask db migrate -m "initial migrate" ` 
+
 `flask db upgrade`
 
 ## Run Flask
@@ -17,6 +19,7 @@ Microservice/API
 
 ## Create a User
 `Curl -i -H ‘Content-Type: application/json’ localhost:5000/api/v1/users -d ‘{“username”:”admin”,”password”:”123”}’ `
+
 `Curl -i -H ‘Content-Type: application/json’ localhost:5000/api/v1/users -d ‘{“username”:”test”,”password”:”123”}’`
 
 ## Get a Token
